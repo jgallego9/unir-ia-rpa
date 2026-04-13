@@ -1,0 +1,101 @@
+\documentclass[12pt,a4paper,spanish]{book}
+\usepackage{estilo_unir-1}
+\usepackage[natbibapa]{apacite}
+\usepackage{booktabs}
+\usepackage[sfdefault]{carlito} % Calibri-like font
+\usepackage{textcomp} % Added for euro symbol and other text symbols
+
+\usepackage{hyperref}
+\setlength{\headheight}{27.16422pt}
+\addtolength{\topmargin}{-1.88002pt}
+\numberwithin{equation}{chapter}
+%\usepackage{caption}
+\numberwithin{figure}{chapter}
+%\usepackage{chngcntr}
+%\counterwithin{equation}{chapter}
+%\counterwithin{figure}{chapter}
+%\counterwithin{table}{chapter}
+%\renewcommand\theequation{\thechapter.\arabic{equation}}
+%\renewcommand\thefigure{\thechapter.\arabic{figure}}
+%\renewcommand\thetable{\thechapter.\arabic{table}}
+%\renewcommand\theequation{\thechapter.\arabic{equation}}
+%\counterwithin{figure}{chapter}
+%\counterwithin{table}{chapter}
+%\renewcommand\thefigure{\thechapter.\arabic{figure}}
+%\renewcommand\thetable{\thechapter.\arabic{table}}
+%\renewcommand\thefigure{\thechapter.\arabic{figure}}
+%\makeatletter
+%\renewcommand\p@figure{\thechapter..\arabic{figure}}
+%\makeatother
+
+
+
+%---------------------------
+%título del trabajo y autor
+%---------------------------
+\title{\textbf{Búsqueda de rutas en empresa de paquetería}}
+\titulacion{Razonamiento y Planificación Automática }
+\author{Javier Gallego Fernández}
+\date{11 de abril de 2026}
+\nombreciudad{Santiago de Compostela}
+
+%---------------------------
+%marges
+%---------------------------
+%\usepackage[margin=1.9cm]{geometry}
+%---------------------------
+%---------------------------
+%---------------------------
+%---------------------------
+\begin{document}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla} 
+
+\maketitle
+
+\chapter{Caso 1}
+
+\section{Comparativa entre búsqueda en amplitud y búsqueda en profundidad}
+
+En este apartado se comparan los resultados obtenidos al ejecutar los algoritmos de búsqueda en amplitud y búsqueda en profundidad sobre el problema planteado.
+
+\section{Tabla de resultados}
+
+\begin{table}[htbp]
+\centering
+\caption{Comparativa de resultados entre búsqueda en amplitud y búsqueda en profundidad}
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lp{6.2cm}cccc}
+\toprule
+\textbf{Algoritmo o caso} & \textbf{Solución} & \textbf{Longitud} & \textbf{Coste solución} & \textbf{Nodos expandidos} & \textbf{Tamaño máximo de lista} \\
+\midrule
+Búsqueda en amplitud & B1 $\rightarrow$ C1 $\rightarrow$ D1 $\rightarrow$ E1 $\rightarrow$ F1 $\rightarrow$ G1 $\rightarrow$ G2 $\rightarrow$ G3 $\rightarrow$ F3 $\rightarrow$ E3 & 10 & 9.0 & 26 & 7 \\
+Búsqueda en profundidad & B1 $\rightarrow$ A1 $\rightarrow$ A2 $\rightarrow$ A3 $\rightarrow$ A4 $\rightarrow$ A5 $\rightarrow$ B5 $\rightarrow$ C5 $\rightarrow$ D5 $\rightarrow$ E5 $\rightarrow$ F5 $\rightarrow$ G5 $\rightarrow$ G4 $\rightarrow$ G3 $\rightarrow$ F3 $\rightarrow$ E3 & 16 & 15.0 & 19 & 12 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\section{Análisis de los resultados}
+
+\begin{enumerate}
+	\item ¿Obtiene amplitud un resultado óptimo? ¿Por qué?
+    
+	\vspace{2cm}
+    
+	\item ¿Obtiene profundidad un resultado óptimo? ¿Por qué?
+    
+	\vspace{2cm}
+    
+	\item ¿Cuál de los dos algoritmos es más eficiente en este caso particular? Justifique su respuesta.
+    
+	\vspace{3cm}
+\end{enumerate}
+
+\chapter{Caso 2}
+
+\chapter{Caso 3}
+
+\end{document}
